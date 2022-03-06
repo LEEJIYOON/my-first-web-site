@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> <!--해당 html 문서의 속성-->
     <title>WEB1 - Python</title> <!--주소창 제목-->
     <meta charset="utf-8">  <!--우리가 인코딩한 파일형식을 명시해줌 character + set(규칙)-->
+     <!-- css임을 알려주는 tag-->
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
-    <h1><a href="index.html">PYTHON</a></h1>
-    <ol> <!--order list  / ul mean unordered list-->
-        <li><a href="1.html">List</a></li>
-        <li><a href="2.html">Array</a></li>
-        <li><a href="3.html">Dictionary</a></li>
-        <li><a href="4.html">Tuple</a></li>
-    </ol>
-    <h2>Python이란 무엇인가?</h2>
-    <p><a href="https://docs.python.org/3/reference/" target="_blank" title="python specification">Python</a>
-    <!--href: hyper link + reference  / target: 새창에서 띄우기 / title: 마우스 가져다되면 뭐가 뜨는지 나오게-->
-    
-        is an interpreted <u>high-level general-purpose programming language</u>. 
-    Its design philosophy emphasizes code readability with the <strong>use of significant indentation.</strong> Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small- and large-scale projects.[29]
-    </p>
-    <img src="coding.jpg" width="100%"> <!--attribute is not care position 둘이 위치 바꿔도됨-->
-    <p>
-    Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.[30][31]</p>
+
+        <h1><a href="index.html">HOME</a></h1>
+        <div id="grid">
+        <ol> <!--order list  / ul mean unordered list-->
+            <li><a href="1.html" class="saw">List</a></li>
+            <li><a href="2.html" class="saw active">Array</a></li>
+            <li><a href="3.html">Dictionary</a></li> 
+            <li><a href="4.html">Tuple</a></li>
+        </ol>
+
+        <!--
+        <h1><a href="index.html"><font color="red">PYTHON</font></a></h1>
+        <ol> 
+            <li><a href="1.html">List</a></li>
+            <li><a href="2.html">Array</a></li>
+            <li><a href="3.html">Dictionary</a></li> 
+            <li><a href="4.html">Tuple</a></li>
+        </ol>
+        --><!--order list  / ul mean unordered list-->
+        <div id="article">
+            <h2>Python이란 무엇인가?</h2>
+            <p><a href="https://docs.python.org/3/reference/" target="_blank" title="python specification">Python</a>
+            <!--href: hyper link + reference  / target: 새창에서 띄우기 / title: 마우스 가져다되면 뭐가 뜨는지 나오게-->
+            
+                is an interpreted <u>high-level general-purpose programming language</u>. 
+            Its design philosophy emphasizes code readability with the <strong>use of significant indentation.</strong>
+            Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small- and large-scale projects.[29]
+            </p>
+            <img src="coding.jpg" width="100%"> 
+            <!-- attribute is not care position 둘이 위치 바꿔도됨 -->
+            <p>
+            Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), 
+            object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.[30][31]
+            </p>
+        </div>
+    </div>
 </body>
 </html>
