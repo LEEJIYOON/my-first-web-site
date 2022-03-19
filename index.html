@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum App</title>
+</head>
+<body>
+    <div id="quote">
+        <span id="lines"></span>
+        <p>
+        <span id="title"></span>
+        </p>
+    </div>
+    <div class="center">
+    <h2 id="clock">00:00:00</h2>
+    <form id="login-form" class="hidden">
+        <input 
+        required
+        maxlength="15"
+        type="text" placeholder="What is your name?" />
+        <!-- <button>Log In</button> -->
+        <input type="submit" value="Log In" />
+    </form>
+    <!-- <a href="https://nomadcoders.co/">Go to courses</a> -->
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+        <input required type="text" class="toDo__button" placeholder="Write things to Do Here!" />
+    </form>
+    <ul id="todo-list" class="toDo"></ul>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <!-- <script src="js/background.js"></script> -->
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</body>
+</html>
